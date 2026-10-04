@@ -26,8 +26,6 @@ app.engine("ejs",ejsMate);
 app.use(express.static(path.join(__dirname,"/public/css")));
 app.use(express.static(path.join(__dirname,"/public/js")));
 
-const dns = require("dns");
-dns.setServers(["8.8.8.8", "1.1.1.1"]);
 
 const atlasUrl = process.env.ATLAS_URL;
 async function main(){
